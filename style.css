@@ -1,0 +1,288 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+    overflow-x: hidden;
+    
+}
+
+.main-container{
+    background-color: rgb(111, 111, 189);
+    width: 100%;
+    height: 100vh;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden; /* if border-radius want to work */     
+     
+}
+
+.playlist-container{
+    background-color: rgb(27, 217, 141);
+    height: 85vh;
+    width: 100%;
+    display: flex; /* if we want to brake .playlist and .playin divs into 2 parts we have to use display: flex;  */
+}
+
+.playlist{
+    width: 25%;
+    background-color: rgb(22, 21, 21);
+    overflow: hidden;
+}
+
+.playin{
+    width: 75%;
+    background-color: rgba(22, 21, 21, 0.972);
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.music-player{
+    background-color: aqua;
+    height: 15vh;
+    width: 100%;
+    
+}
+
+.logo{
+    /* width: 40px; */
+    height: 40px;
+    margin: 20px;
+}
+
+.playlist-cart{
+    display: flex;
+    padding: 5px 15px;
+}
+
+.playlist-main-content{
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.fa-solid {
+    /* color: bisque; */
+    padding-right: 10px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.playlist-main-content-header{
+    margin: 15px;
+    font-weight: 600;
+    color: white;
+}
+
+.played-track{
+    color: aliceblue;
+    font-weight: 400;
+    margin: 10px 5px;
+    cursor: pointer;
+    font-size: 15px;
+    border: 1px solid rgb(53, 52, 45);
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.top-header-gradiant{
+    background-image: linear-gradient(rgba(27, 194, 60, 0.549),rgb(34, 32, 32));   
+}
+
+.track-list{
+    margin: 10px 5px;
+    height: 60vh;
+    border-radius: 5px;
+    background-color: rgb(39, 39, 39);
+    overflow: scroll;
+}
+
+.top-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.image-palaylist{
+    height: 150px;
+    margin-top: 5px;
+    margin-right: 10px;
+
+}
+
+.playlist-image-container{
+    padding: 20px;
+    display: flex;
+}
+
+.data{
+    color: white;
+    margin-top: 10px;
+}
+
+.play-buttons{
+    margin: 10px;
+}
+
+.fa-play-circle{
+    color: #1ed761;
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+.fa-heart{
+    color: #1ed761;
+    margin-bottom: 8px;
+    margin-right: 10px;
+
+}
+
+.fa-ellipsis-h{
+    color: #ffffff;
+}
+
+.playing-songs{
+    overflow: hidden;
+    width: 90%;
+
+}
+
+.playing-songs-container{
+    margin: 10px;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.songs-container1{
+    display: flex;
+    color: white;
+}
+
+.icon-music{
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.songs-details{
+    font-size: 10px;
+    font-weight: 100;
+    opacity: 0.6;
+}
+
+.songs-text{
+    font-size: 15px;
+    font-weight: 400;
+
+}
+
+.music-player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(51, 51, 51);
+
+}
+
+.player-content-1{
+    display: flex;
+    align-items: center; 
+}
+
+.palyer-image{
+    padding-left: 10px;
+    height: 60px;
+}
+
+.player-text h3 {
+    padding-left: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+.player-text h4{
+    font-size:10px;
+    opacity: 0.5;
+    padding-left: 10px;
+    color: rgb(221, 216, 216);
+    font-weight: 300;
+
+}
+
+.player-icons{
+    padding-left: 20px;
+    /* display: inline; */
+}
+
+.player-content-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.playerslider{
+    display: flex;
+    align-items: center;
+
+
+}
+.timer{
+    padding-inline: 5px;
+    color: white;
+    font-size: 15px;
+}
+
+.timeline{
+    width: 500px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.player-content-3{
+    display: flex;
+    align-items: center;
+    padding-inline-end: 20px;
+}
+
+h2:hover {
+    color: #1ed761;
+    cursor: pointer;
+
+}
+
+h3:hover {
+    color: #1ed761;
+    cursor: pointer;
+
+}
+
+.fa-desktop, .fa-list, .fa-volume-up{
+    color: #ffffff;
+    padding: 5px;
+}
+
+.player-controls{
+    color: #ffffff;  
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #f1f1f1;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #888;
+    border-radius: 50px;  
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: #555;
+}
+
